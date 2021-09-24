@@ -1,7 +1,11 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "TPSCharacter.h"
+
+#if WITH_EDITOR
 #include "HeadMountedDisplayFunctionLibrary.h"
+#endif
+
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
@@ -85,7 +89,9 @@ void ATPSCharacter::OnResetVR()
     // supporting VR).
     // or:
     //		Comment or delete the call to ResetOrientationAndPosition below (appropriate if not supporting VR)
+    #if WITH_EDITOR
     UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
+    #endif
 }
 
 void ATPSCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
