@@ -5,11 +5,11 @@ UseTab: Never
 TabWidth: '4'
 BreakBeforeBraces: Allman
 ColumnLimit: '140'
-AccesModifierOffset: '-4'
+AccessModifierOffset: '-4'
 SortIncludes: false
 AllowShortBlocksOnASingleLine: false
-AlighAfterOpenBracket: DontAlign
-AllowShortFunctionOnSingleLine: Inline
+AlignAfterOpenBracket: DontAlign
+AllowShortFunctionsOnASingleLine: Inline
 PointerAlignment: Left
 AllowShortIfStatementsOnASingleLine: true
 SpacesBeforeTrailingComments: 2
