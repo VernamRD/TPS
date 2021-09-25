@@ -89,7 +89,7 @@ void ATPSCharacter::OnResetVR()
     // supporting VR).
     // or:
     //		Comment or delete the call to ResetOrientationAndPosition below (appropriate if not supporting VR)
-    #if WITH_EDITOR
+    #if MY_VR_MACRO
     UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
     #endif
 }

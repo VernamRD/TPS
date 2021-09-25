@@ -19,6 +19,12 @@ public class TPS : ModuleRules
         if(Target.Type == TargetType.Editor)
         {
             PublicDependencyModuleNames.Add("HeadMountedDisplay");
+            PublicDefinitions.Add("MY_VR_MACRO=1");         
         }
+        else if (Target.Type == TargetType.Game)
+        {
+            PublicDefinitions.Add("MY_VR_MACRO=0");
+        }
+
     }
 }
