@@ -161,7 +161,8 @@ void ATPSCharacter::LookUpAtRate(float Rate)
     AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
-void ATPSCharacter::MoveForward(float Value){
+void ATPSCharacter::MoveForward(float Value)
+{
     if ((Controller != nullptr) && (Value != 0.0f))
     {
         // find out which way is forward
@@ -174,8 +175,10 @@ void ATPSCharacter::MoveForward(float Value){
     }
 }
 
-void ATPSCharacter::MoveRight(float Value){
-    if ((Controller != nullptr) && (Value != 0.0f)){
+void ATPSCharacter::MoveRight(float Value)
+{
+    if ((Controller != nullptr) && (Value != 0.0f))
+    {
         // find out which way is right
         const FRotator Rotation = Controller->GetControlRotation();
         const FRotator YawRotation(0, Rotation.Yaw, 0);
