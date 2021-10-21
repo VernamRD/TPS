@@ -161,8 +161,7 @@ void ATPSCharacter::LookUpAtRate(float Rate)
     AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
-void ATPSCharacter::MoveForward(float Value)
-{
+void ATPSCharacter::MoveForward(float Value){
     if ((Controller != nullptr) && (Value != 0.0f))
     {
         // find out which way is forward
@@ -175,8 +174,7 @@ void ATPSCharacter::MoveForward(float Value)
     }
 }
 
-void ATPSCharacter::MoveRight(float Value)
-{
+void ATPSCharacter::MoveRight(float Value){
     if ((Controller != nullptr) && (Value != 0.0f))
     {
         // find out which way is right
