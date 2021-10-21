@@ -11,6 +11,6 @@ class ATPSGameMode : public AGameModeBase
 {
     GENERATED_BODY()
 
-public:
+  public:
     ATPSGameMode();
 };
