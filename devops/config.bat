@@ -2,7 +2,7 @@
 
 rem Engine params
 set EnginePath_4.27=D:\JenkinsJobs\UE Source
-set EnginePath_4.27_InstalledBuild=D:\JenkinsJobs\UE Source\UE_4.27_InstalledBuild
+set EnginePath_4.27_InstalledBuild=E:\GameDev\UE_4.27_InstalledBuild
 
 set UBTRelativePath4=Engine\Binaries\DotNET\UnrealBuildTool.exe
 set UBTRelativePath5=Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe

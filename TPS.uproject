@@ -1,13 +1,22 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{EE59AE0C-467F-5696-A4DF-8FA7A230EB7F}",
+	"EngineAssociation": "{003B41FA-44A0-7DB7-0ABC-1D9BAB44158D}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "TPS",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "PythonAutomationTest",
+			"Enabled": true
 		}
 	]
 }
