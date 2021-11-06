@@ -37,8 +37,8 @@ ATPSCharacter::ATPSCharacter()
     GetCharacterMovement()->bOrientRotationToMovement = true;  // Character moves in the
                                                                // direction of input...
     GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f,
-                                                    0.0f);  // ...at this rotation
-                                                            // rate
+        0.0f);  // ...at this rotation
+                // rate
     GetCharacterMovement()->JumpZVelocity = 600.f;
     GetCharacterMovement()->AirControl = 0.2f;
 
@@ -56,19 +56,19 @@ ATPSCharacter::ATPSCharacter()
     // Create a follow camera
     FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
     FollowCamera->SetupAttachment(CameraBoom,
-                                  USpringArmComponent::SocketName);  // Attach the
-                                                                     // camera to
-                                                                     // the end of
-                                                                     // the boom
-                                                                     // and let the
-                                                                     // boom adjust
-                                                                     // to match
-                                                                     // the
-                                                                     // controller
-                                                                     // orientation
-    FollowCamera->bUsePawnControlRotation = false;                   // Camera does not
-                                                                     // rotate relative to
-                                                                     // arm
+        USpringArmComponent::SocketName);           // Attach the
+                                                    // camera to
+                                                    // the end of
+                                                    // the boom
+                                                    // and let the
+                                                    // boom adjust
+                                                    // to match
+                                                    // the
+                                                    // controller
+                                                    // orientation
+    FollowCamera->bUsePawnControlRotation = false;  // Camera does not
+                                                    // rotate relative to
+                                                    // arm
 
     // Note: The skeletal mesh and anim
     // blueprint references on the Mesh

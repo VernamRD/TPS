@@ -19,7 +19,7 @@ class ATPSCharacter : public ACharacter
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
     class UCameraComponent* FollowCamera;
 
-  public:
+public:
     ATPSCharacter();
 
     /** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
@@ -30,7 +30,7 @@ class ATPSCharacter : public ACharacter
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
     float BaseLookUpRate;
 
-  protected:
+protected:
     /** Resets HMD orientation in VR. */
     void OnResetVR();
 
@@ -58,20 +58,14 @@ class ATPSCharacter : public ACharacter
     /** Handler for when a touch input stops. */
     void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
 
-  protected:
+protected:
     // APawn interface
     virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
     // End of APawn interface
 
-  public:
+public:
     /** Returns CameraBoom subobject **/
-    FORCEINLINE class USpringArmComponent* GetCameraBoom() const
-    {
-        return CameraBoom;
-    }
+    FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
     /** Returns FollowCamera subobject **/
-    FORCEINLINE class UCameraComponent* GetFollowCamera() const
-    {
-        return FollowCamera;
-    }
+    FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
